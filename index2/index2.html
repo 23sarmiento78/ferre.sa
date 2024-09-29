@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ferre.SA - Distribuidor Mayorista de Sistemas Hidráulicos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <style>
+     :root {
+    --primary-color: #1e90ff;
+    --secondary-color: #f0f8ff;
+    --accent-color: #ff6347;
+    --text-color: #333;
+  }
+  
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text-color);
+    scroll-behavior: smooth;
+  
+  }
+
+    .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .nav-links a:hover {
+    color: var(--accent-color);
+  }
+
+  .hero p {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  }
+  
+  .cta-button {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .cta-button:hover {
+    background-color: #ff4500;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+  .hero .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  }
+
+  .hero {
+    background-image: url('https://scontent.fcor10-3.fna.fbcdn.net/v/t39.30808-6/461425677_8583084445077206_8416427761872569796_n.jpg?stp=dst-jpg_p180x540&_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGsbo1UL_W1H8sHHN-ePNGJ9eU_0xoL-TL15T_TGgv5Mj9muV8T1bt3hwx1uf4JLJApt0XIYEfDz1DXGeUsDxsC&_nc_ohc=qLaivtkThk0Q7kNvgE4KDhP&_nc_ht=scontent.fcor10-3.fna&oh=00_AYApeUEraltRxUHqzhR-tmHON-kQvhZ2Hnsr6NFnXxPLZg&oe=66FE69E4');
+    background-size: cover;
+    background-position: center;
+    padding: 120px 0;
+    text-align: center;
+    position: relative;
+  }
+
+  .card {
+  width: 250px; /* Ancho reducido */
+  height: 550px; /* Altura reducida */
+  margin: 30px; /* Margen alrededor de la tarjeta */
+  padding: 10px; /* Espacio interno */
+  background-color: rgba(8, 8, 8, 0.664);
+  transition: transform 0.3s ease; /* Transición suave */
+  color: #f0f8ff;
+  border-radius: 50px;
+}
+
+.card img {
+  width: 100%; /* Asegura que la imagen ocupe todo el ancho de la tarjeta */
+  height: 60%; /* Asegura que la imagen ocupe toda la altura de la tarjeta */
+  object-fit: cover; /* Ajusta la imagen para que cubra el área de la tarjeta sin distorsionarse */
+  border-radius: 50px;
+}
+
+.card:hover {
+  transform: scale(1.1); /* Aumenta el tamaño al pasar el ratón */
+}
+
+.card p {
+  margin: 0; /* Elimina márgenes adicionales */
+  overflow: hidden; /* Oculta el texto que se salga del cuadro */
+  text-decoration: #f0f8ff;
+  font-size: 14px; /* Tamaño de fuente reducido */
+}
+
+main {
+  background-image: url(fotos/red-black-and-white-lines-fsonikk4071cdf5b.jpg);
+  background-repeat: no-repeat;
+}
+
+footer {
+    background-color: #1e90ff;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    position: relative;
+  }
+
+  footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+  }
+
+  footer .container {
+    
+    position: relative;
+    z-index: 2;
+  }
+
+  @keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+  }
+
+  .product-icon {
+    animation: float 3s ease-in-out infinite;
+  }
+  .social-links a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.social-links i {
+    font-size: 1.5rem;
+    margin-right: 5px;
+}
+  
+       
+  </style>
+</head>
+<body>
+ <header>
+    <nav class="container">
+      <div class="logo">ferre.Sa</div>
+      <div class="nav-links">
+        <a href="#productos">Productos</a>
+        <a href="#cita">Agendar Cita</a>
+        <a href=>nosotros</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1>Soluciones Hidráulicas de Alta Calidad</h1>
+          <p>Distribuidor mayorista especializado en sistemas hidráulicos y accesorios</p>
+          <a href="file:///C:/Users/sarmi/Desktop/ferre.sa/index.html" class="cta-button">Agendar Instalación</a>
+        </div>
+      </section>
+      <div class="card-group">
+        <div class="card">
+          <img src="fotos/que-ver-en-Caracas2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">ferre.Sa</h5>
+            <p class="card-text">Ferre.sa se encuentra ubicada en Caracas, Venezuela, en la Avenida Tamanaco, diagonal a la estación de servicio, Edificio Eureka, El Llanito, Estado Miranda. Ofrecemos nuestros servicios en toda la capital y estamos comprometidos con la expansión continua de nuestra cobertura.</p>
+            <p>Ser la empresa líder en soluciones ferreteras en Caracas, reconocida por nuestra innovación, calidad y compromiso con el cliente. Aspiramos a expandir nuestra presencia a nivel nacional, ofreciendo productos y servicios que mejoren la vida de nuestros clientes y contribuyan al desarrollo de la comunidad</p>
+          </div>
+          
+        </div>
+        <div class="card">
+          <img src="fotos/10419583_942180822499222_279889352813916691_n.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Luis Enrique Sarmiento Rojas</h5>
+            <p class="card-text"> Destacado vendedor y comerciante con más de 20 años de experiencia en el sector de comercio y productos industriales. Fundó Ferre.Sa con la visión de ofrecer servicios de instalación de la más alta calidad, accesibles para todos los clientes. Tras una exitosa carrera como vendedor y comerciante, Luis decidió aplicar sus vastos conocimientos y habilidades en la creación de esta empresa. Ferre.Sa se especializa en la instalación de bombas de agua y servicios hidroneumáticos, garantizando productos de alta gama y calidad a los mejores precios del mercado</p>
+          </div>
+        </div>
+       </main>
+       <footer id="contacto">
+        <div class="container text-center">
+          <div>
+            <p>&copy; 2023 Ferre.SA - Todos los derechos reservados</p>
+            <div class="social-links d-flex justify-content-center">
+                <a href="hhttps://www.instagram.com/ferre.sa/" target="_blank" class="d-flex align-items-center mx-2">
+                    <i class="bi bi-instagram"></i> Instagram
+                </a>
+                <a href="https://www.facebook.com/Ivt.ferresa" target="_blank" class="d-flex align-items-center mx-2">
+                    <i class="bi bi-facebook"></i> Facebook
+                </a>
+                <a href="https://wa.me/+584141344705" target="_blank" class="d-flex align-items-center mx-2">
+                    <i class="bi bi-whatsapp"></i> WhatsApp
+                </a>
+            </div>
+          </div>
+        </div>
+    </footer>
+    
+      <script>
+        document.getElementById('appointment-form').addEventListener('submit', function(e) {
+          e.preventDefault();
+          alert('Gracias por agendar una cita. Nos pondremos en contacto contigo pronto.');
+          this.reset();
+        });
+    
+        // Animación suave al desplazarse a las secciones
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+          anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+              behavior: 'smooth'
+            });
+          });
+        });
+      </script>
+ 
+</body>
+</html>
+    
